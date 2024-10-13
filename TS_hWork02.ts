@@ -36,6 +36,13 @@ const library: Book[] = [
     genre: Genre.ScienceFiction,
     isAvailable: false,
   },
+  {
+    title: "title",
+    author: "author",
+    yearPublished: 1956,
+    genre: Genre.ScienceFiction,
+    isAvailable: false,
+  },
 ];
 
 console.log(library);
