@@ -1,5 +1,4 @@
 // Krok 1: Definicja typu TaskType
-
 type TaskType = {
   id: number;
   title: string;
@@ -17,7 +16,7 @@ const tasks: TaskType[] = [
   },
   {
     id: 2,
-    title: "przeczytaj prezentacje",
+    title: "przeczytaj prezentację",
     description:
       "włącz Discorda, ściągnij prezentację w pdf, otwórz prezentacje, zapoznaj się z wykładem",
     completed: false,
