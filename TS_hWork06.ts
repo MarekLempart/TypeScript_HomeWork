@@ -12,7 +12,7 @@ class MyBook {
 
     // Metoda do wyświetlania informacji o książce
     displayInfo() {
-        console.log(`My book is Title: ${this.title}, Autor: ${this.author}, ISBN: ${this.isbn}`);
+        console.log(`My book is Title: ${this.title}, Author: ${this.author}, ISBN: ${this.isbn}`);
     }
 }
 
@@ -31,11 +31,11 @@ class MyLibrary {
     }
     
     // Metoda do usuwania książki na podstawie ISBN
-    removeBook(isbn: string): void {
+    removeMyBook(isbn: string): void {
         const index = this.myBooks.findIndex(myBook => myBook.isbn !== isbn);
         if (index !== -1) {
-            const removeBook = this.myBooks.splice(index, 1) [0];
-            console.log(`Book removed: ${removeBook.title}.`);            
+            const removeMyBook = this.myBooks.splice(index, 1) [0];
+            console.log(`Book removed: ${removeMyBook.title}.`);            
         } else {
             console.log(`Book with ISBN ${isbn} not found.`);
         }
@@ -85,7 +85,7 @@ if (foundMyBook) {
 }
 
 // Usuwanie książki na podstawie ISBN
-library01.removeBook("978-0060935467");
+library01.removeMyBook("978-0060935467");
 
 // Wyświetlanie wszystkich książek po usunięciu jednej
 library01.displayAllMyBooks();
